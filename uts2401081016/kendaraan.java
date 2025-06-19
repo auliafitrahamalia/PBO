@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package uts2401081016;
 
@@ -8,33 +9,32 @@ package uts2401081016;
  *
  * @author user
  */
-//Soal grup B
 public class kendaraan {
-    private int jmlRoda;
-    private String warna;
+    protected int jmlRoda;
+    protected String warna;
     
     public kendaraan(){
-        
+    
     }
+    
     public kendaraan(int jmlRoda, String warna){
-        this.jmlRoda = jmlRoda;
-        this.warna = warna;
+        this.jmlRoda=jmlRoda;
+        this.warna=warna;
     }
-            
-    public  int getjmlRoda(){
+    
+    public void setJmlRoda(int jmlRoda){
+        this.jmlRoda=jmlRoda;
+    }
+    
+    public int getJmlRoda(){
         return jmlRoda;
     }
     
-    public void setjmlRoda(int jmlRoda){
-        this.jmlRoda = jmlRoda;
+    public void setWarna(String warna){
+        this.warna=warna;
     }
     
     public String getWarna(){
-        return this.warna;
+        return warna;
     }
-    
-    public void setWarna (String warna){
-        this.warna = warna;
-    }
-    
 }

@@ -8,30 +8,32 @@ package uts2401081016;
  *
  * @author user
  */
-//Soal grup B
-public class sepeda extends kendaraan {
-    private String jmlSadel;
-    private int jmlGir;
+public class sepeda extends kendaraan{
+    protected String jmlSadel;
+    protected int jmlGir;
     
     public sepeda(){
-        
+        super();
     }
     
     public sepeda(String jmlSadel, int jmlGir){
-        this.jmlSadel = jmlSadel;
-        this.jmlGir = jmlGir;
+        this.jmlSadel=jmlSadel;
+        this.jmlGir=jmlGir;
     }
     
-    public String setjmlSadel(String jmlSadel){
-        return this.jmlSadel;
+    public void setJmlSadel(String jmlSadel){
+        this.jmlSadel=jmlSadel;
     }
     
-    public int getjmlGir(){
+    public String getJmlSadel(){
+        return jmlSadel;
+    }
+    
+    public void setJmlGir(int jmlGir){
+        this.jmlGir=jmlGir;
+    }
+    
+    public int getJmlGir(){
         return jmlGir;
     }
-    
-    public void setjmlGir(int jmlGir){
-        this.jmlGir = jmlGir;
-    }
-            
 }

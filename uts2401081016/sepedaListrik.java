@@ -8,35 +8,32 @@ package uts2401081016;
  *
  * @author user
  */
-//Soal grup B
 public class sepedaListrik extends sepeda{
-    private int kecepatanMaks;
-    private int jarakTempuh;
+    protected int kecepatanMaks;
+    protected int jarakTempuh;
     
     public sepedaListrik(){
-        
+        super();
     }
     
     public sepedaListrik(int kecepatanMaks, int jarakTempuh){
-        this.kecepatanMaks = kecepatanMaks;
-        this.jarakTempuh = jarakTempuh;
+        this.kecepatanMaks=kecepatanMaks;
+        this.jarakTempuh=jarakTempuh;
     }
     
-    public int getkecepatanMaks(){
+    public void setKecepatanMaks(int kecepatanMaks){
+        this.kecepatanMaks=kecepatanMaks;
+    }
+    
+    public int getKecepatanMaks(){
         return kecepatanMaks;
     }
     
-    public void setkecepatanMaks(int kecepatanMaks){
-        this.kecepatanMaks = kecepatanMaks;
+    public void setJarakTempuh(int jarakTempuh){
+        this.jarakTempuh=jarakTempuh;
     }
     
-    public int getjarakTempuh(){
+    public int getJarakTempuh(){
         return jarakTempuh;
     }
-    
-    public void setjarakTempuh(int jarakTempuh){
-        this.jarakTempuh = jarakTempuh;
-    }
-    
-    
 }
